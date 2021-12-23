@@ -1,13 +1,12 @@
-// import statistics from '../JSON/statistics-data.json'
-
+import s from './Statistics.module.css'
 import StatisticsItem from "./StatisticsItem"
 
 
 function Statistics({ prop, title }) {
     return (
-        <section className="statistics">
-            {title && <h2 className="title">{title}</h2>}
-            <ul className="stat-list">
+        <section className={s.statistics}>
+            {title && <h2 className={s.title}>{title}</h2>}
+            <ul className={s.statList}>
             {prop.map(item => (
                 <StatisticsItem
                     key={item.id}
