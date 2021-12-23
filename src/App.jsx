@@ -4,6 +4,9 @@ import Statistics from "./components/statistics/Statistics";
 import FriendList from "./components/friend-list/FriendList";
 import friends from "./components/JSON/friends.json"
 import stat from './components/JSON/statistics-data.json'
+import TransactionHistory from "./components/transaction/TransactionHistory";
+import transactions from './components/JSON/transactions.json'
+
 function App() {
   return (<div>
       <Profile
@@ -14,7 +17,8 @@ function App() {
         stats={user.stats}
       />
     <Statistics title={'Statistics'} prop={stat}/>
-    <FriendList prop={friends}/>
+    <FriendList prop={friends} />
+    <TransactionHistory items={transactions}/>
     </div>
   );
 }
