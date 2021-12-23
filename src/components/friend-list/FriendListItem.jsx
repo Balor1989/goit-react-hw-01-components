@@ -1,8 +1,6 @@
 import propTypes from "prop-types"
 
 
-
-
 function FriendListItem(props) {
     const {id, avatar, name, isOnline } = props
     return (
