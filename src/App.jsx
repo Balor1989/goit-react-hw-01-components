@@ -1,10 +1,16 @@
+import Profile from "./components/profile/Profile";
+import user from './components/profile/user.json'
 
 
 function App() {
   return (
-    <div>
-      <h1>Hello!</h1>
-    </div>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
   );
 }
 
