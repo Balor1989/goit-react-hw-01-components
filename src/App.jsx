@@ -1,9 +1,10 @@
 import Profile from "./components/profile/Profile";
-import user from './components/profile/user.json'
+import user from './components/JSON/user.json'
+import Statistics from "./components/statistics/Statistics";
 
 
 function App() {
-  return (
+  return (<div>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -11,6 +12,8 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
+    <Statistics />
+    </div>
   );
 }
 
