@@ -25,6 +25,7 @@
   text-align: center;
 }
 .avatar {
+  background-color: rgb(39, 230, 230);
   border: 2px solid #c9c3c3;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -34,7 +35,7 @@
   font-weight: 700;
 }
 .stats {
-  background-color: #48c3f76d;
+  background-color: rgb(39, 230, 230);
   width: 240px;
   text-decoration: none;
   display: flex;
@@ -44,10 +45,16 @@
   margin-left: auto;
   margin-right: auto;
   box-shadow: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 1), -23px 0 20px -23px rgba(0, 0, 0, 0.8),
+    23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 .stats li {
   display: inline-flex;
   flex-direction: column;
+  padding: 10px;
+  background-color: rgb(243, 170, 243);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 1), -23px 0 20px -23px rgba(0, 0, 0, 0.8),
+    23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 .label {
   font-weight: 700;
