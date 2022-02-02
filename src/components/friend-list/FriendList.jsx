@@ -1,10 +1,10 @@
 import s from './FriendList.module.css'
 import FriendListItem from "./FriendListItem";
 
-function FriendList({prop}) {
+function FriendList({friends}) {
     return (
         <ul className={s.friendList}>
-            {prop.map(item => (
+            {friends.map(item => (
                 <FriendListItem
                     key={item.id}
                     avatar={item.avatar}
