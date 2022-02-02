@@ -16,7 +16,7 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-    <Statistics title='Statistics' prop={stat}/>
+    <Statistics title='Statistics' statistics={stat}/>
     <FriendList friends={friends} />
     <TransactionHistory items={transactions}/>
     </div>
